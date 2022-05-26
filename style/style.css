@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("reset.css");
+
+:root {
+  --font: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4a159d, #6a28c0, #ad59f9);
+}
+
+.container {
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font);
+  font-size: 16pt;
+  outline: none;
+  background-color: #121212;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(51, 141, 169);
+  color: #ffffff;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  grid-column: 1 / -1;
+  background: rgb(33, 33, 33);
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font);
+  font-size: 18pt;
+}
+
+.current {
+  color: #fff;
+  font-family: var(--font);
+  font-size: 22pt;
+}
+
+.clear:hover{
+  background:rgb(57, 10, 10);
+}
+
+.ce {
+  grid-area: 2 / 1 / 3 / 2;
+  background: rgb(227, 73, 73);
+}
+
+.ce:hover{
+  background: rgb(57, 10, 10);
+}
+
+.operator, .equal {
+  background: #1a1a1a;
+}
+
+.equal:hover{
+  background: rgb(15, 124, 67);
+}
+
+.result {
+  display: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font);
+  font-size: 18pt;
+}
+
+/* Button grid area */
+
+.division {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.times {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.subtraction {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.seven {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.eigth {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.nine {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.four {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.five {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.six {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.one {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.two {
+  grid-area: 5 / 2 / 6 / 3;
+}
+.three {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.plus {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.equal {
+  grid-area: 5 / 4 / 7 / 5;
+}
+.dot {
+  grid-area: 6 / 3 / 7 / 4;
+}
+.zero {
+  grid-area: 6 / 1 / 7 / 3;
+}
+
+
+.clear { grid-area: 2 / 2 / 3 / 3; }
